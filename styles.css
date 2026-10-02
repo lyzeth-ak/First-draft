@@ -1,0 +1,269 @@
+/* Movil*/
+@media (max-width: 767px) {
+
+    body {
+        padding: 0.75rem;
+        background-color: #f7fafc;
+    }
+
+    .cv {
+        border: 1px solid #3182ce;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    header {
+        padding: 1.75rem 1.25rem;
+    }
+
+    header h1 {
+        font-size: 1.75rem;
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+    }
+
+    header .job-title {
+        font-size: 0.95rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.3rem;
+        font-size: 0.8rem;
+    }
+
+    main {
+        padding: 1.5rem 1.25rem;
+        display: block;
+    }
+
+    section {
+        margin-bottom: 1.75rem;
+    }
+
+    section h2 {
+        font-size: 1.1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .summary {
+        font-size: 0.9rem;
+        line-height: 1.65;
+    }
+
+    .experience-item p,
+    .education-item p {
+        font-size: 0.88rem;
+    }
+
+    .skills {
+        gap: 0.4rem;
+    }
+
+    .skills li {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.78rem;
+    }
+
+    .experience-item,
+    .education-item {
+        margin-bottom: 1.25rem;
+    }
+}
+
+
+/* Tablet*/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    body {
+        padding: 2rem;
+        background-color: #f7fafc;
+    }
+
+    .cv {
+        border: 1px solid #38a169;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    header {
+        padding: 2.5rem 2rem 2rem;
+    }
+
+    header h1 {
+        font-size: 2.35rem;
+        margin-bottom: 0.35rem;
+    }
+
+    header .job-title {
+        font-size: 1.1rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.4rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 2.5rem;
+        display: block;
+    }
+
+    section {
+        margin-bottom: 2.25rem;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .summary {
+        max-width: 850px;
+        font-size: 0.98rem;
+        line-height: 1.7;
+    }
+
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.65rem;
+    }
+
+    .skills li {
+        padding: 0.5rem 0.75rem;
+        text-align: center;
+        font-size: 0.88rem;
+    }
+
+    .experience-item p,
+    .education-item p {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* Escritorio */
+
+@media (min-width: 1024px) {
+
+    body {
+        padding: 3.5rem 2rem;
+        background-color: #f7fafc;
+    }
+
+    .cv {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        border: 1px solid #3182ce;
+        border-radius: 14px;
+
+        padding: 2.75rem;
+
+        background-color: #ffffff;
+
+        box-shadow:
+            0 12px 35px rgba(45, 55, 72, 0.07);
+    }
+
+    header {
+        padding: 0 0 2rem;
+        border-bottom: 1px solid #e2e8f0;
+    }
+
+    header h1 {
+        font-size: 2.75rem;
+        margin-bottom: 0.3rem;
+    }
+
+    header .job-title {
+        font-size: 1.2rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.4rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 2.5rem 0 0;
+
+        display: grid;
+
+        grid-template-columns:
+            minmax(0, 2fr) minmax(260px, 1fr);
+
+        column-gap: 4rem;
+        row-gap: 2rem;
+    }
+
+    /*
+     * El perfil ocupa todo el ancho.
+     */
+    #professional-summary {
+        grid-column: 1 / -1;
+        margin-bottom: 0;
+    }
+
+    .summary {
+        max-width: 1000px;
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    /*
+     * Separador columna lateral.
+     */
+    .side-content {
+        border-left: 1px solid #e2e8f0;
+        padding-left: 2.5rem;
+    }
+
+    section {
+        margin-bottom: 2.5rem;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .skills li {
+        padding: 0.4rem 0.7rem;
+        font-size: 0.85rem;
+
+        transition:
+            background-color 0.2s ease,
+            border-color 0.2s ease;
+    }
+
+    .skills li:hover {
+        background-color: #ebf8ff;
+        border-color: #90cdf4;
+    }
+
+    .experience-item p,
+    .education-item p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+}
